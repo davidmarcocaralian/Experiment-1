@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	double mass, density, volume;
+
+	cout << setprecision(2) << showpoint << fixed;
+	cout << "Enter mass (g): ";
+	cin >> mass;
+	cout << "Enter density (g/cm^3): ";
+	cin >> density;
+
+	volume = mass / density;
+
+	cout << "\nVolume is " << volume << " cubic centimeter" << endl;
+
+	_getch();
+	return 0;
+}
